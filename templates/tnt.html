@@ -1,0 +1,14 @@
+{% extends "index.html" %}
+
+<head>
+    {% block head %}
+    {{ super() }}
+    <title>Building...</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/bStyles.css')}}" "styles.css">
+    {% endblock %}
+</head>
+<body>
+    {% block content %}
+        <h1>TnT in <b>Progress</b></h1>
+    {% endblock %}
+</body>

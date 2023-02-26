@@ -1,0 +1,120 @@
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: lightgray;
+}
+
+#building{
+    /* z-index: 1; */
+    display: flex;
+    flex-flow: row-reverse wrap;
+    /* grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%; */
+    background-color: grey;
+    height: 250px;
+    width: 250px;
+}
+
+
+.blocks{
+    z-index: -1;
+    background-color: red;
+    height:33%;
+    width: 33%;
+}
+
+@keyframes rainbow-bg {
+
+    100%,
+    0% {
+        background-color: rgb(255, 0, 0);
+    }
+
+    8% {
+        background-color: rgb(255, 127, 0);
+    }
+
+    16% {
+        background-color: rgb(255, 255, 0);
+    }
+
+    25% {
+        background-color: rgb(127, 255, 0);
+    }
+
+    33% {
+        background-color: rgb(0, 255, 0);
+    }
+
+    41% {
+        background-color: rgb(0, 255, 127);
+    }
+
+    50% {
+        background-color: rgb(0, 255, 255);
+    }
+
+    58% {
+        background-color: rgb(0, 127, 255);
+    }
+
+    66% {
+        background-color: rgb(0, 0, 255);
+    }
+
+    75% {
+        background-color: rgb(127, 0, 255);
+    }
+
+    83% {
+        background-color: rgb(255, 0, 255);
+    }
+
+    91% {
+        background-color: rgb(255, 0, 127);
+    }
+}
+
+.blocks:nth-child(7){
+    animation: rainbow-bg 2.5s  infinite linear;
+
+}
+.blocks:nth-child(8){
+    animation: rainbow-bg 2.5s 1s infinite linear;
+
+}
+.blocks:nth-child(9){
+    animation: rainbow-bg 2.5s 2s infinite linear;
+
+}
+.blocks:nth-child(4){
+    animation: rainbow-bg 2.5s 3s infinite linear;
+}
+.blocks:nth-child(5){
+    animation: rainbow-bg 2.5s 4s infinite linear;
+}
+.blocks:nth-child(6){
+    animation: rainbow-bg 2.5s 5s infinite linear;
+}
+.blocks:nth-child(1){
+    animation: rainbow-bg 2.5s 6s  infinite linear;
+
+}
+.blocks:nth-child(2){
+    animation: rainbow-bg 2.5s 7s infinite linear;
+
+}
+.blocks:nth-child(3){
+    animation: rainbow-bg 2.5s 8s infinite linear; 
+
+}
+
+#btn{
+    height: 2.5vh;
+    width: 10vw;
+    font-size: 12px;
+}
