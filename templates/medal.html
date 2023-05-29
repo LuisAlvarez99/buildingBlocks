@@ -1,0 +1,37 @@
+{% extends "index.html" %}
+
+<head>
+    {% block head %}
+    {{ super() }}
+    <title>Building...</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/mStyle.css')}}">
+    {% endblock %}
+</head>
+
+{% block content %}
+<div id="front">
+    <div id="medals">
+        <div class="medal"></div>
+        <h1 class="top">Dick</h1>
+        <h1 class="mid">#1</h1>
+        <h1 class="bot">Sucker</h1>
+    </div>
+    <div id="straps">
+        <div id="rStrap"></div>
+        <div id="lStrap"></div>
+    </div>
+</div>
+<div id="back">
+    <div id="medals">
+        <div class="medal"></div>
+        <h1 class="top">Daniela</h1>
+        <h1 class="mid">Stephanie</h1>
+        <h1 class="bot">Betancur</h1>
+    </div>
+    <div id="straps">
+        <div id="rStrap"></div>
+        <div id="lStrap"></div>
+    </div>
+</div>
+<script src="{{url_for('static',filename='scripts/mScript.js')}}"></script>
+{% endblock %}

@@ -1,0 +1,161 @@
+
+#front{
+    /* display: flex;
+    justify-content: center;
+    left: %; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: spinner 10s linear infinite;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    z-index: 1;
+}
+#back{
+    /* display: flex;
+    justify-content: center;
+    left: %; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: spinner 10s linear infinite;
+    transform-style: preserve-3d;
+    z-index: 0;
+}
+
+#medals{
+    position: relative;
+    top: 45%;
+    left: 40%;
+    z-index: 2;
+    width: 18%;
+    height: 35%;
+    border-radius: 50%;
+    background-color: gold;
+    /* transform-style: preserve-3d; */
+    /* transform: translateZ(200px); */
+    /* background-color: green; */
+    /* position: inherit; */
+}
+.top{
+    position: absolute;
+    top: 5%;
+    left: 40%;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    color: black;
+}
+.mid{
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    color: black;
+}
+.bot{
+    position: absolute;
+    top: 65%;
+    left: 33%;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    color: black;
+}
+#back .top{
+    position: absolute;
+    top: 5%;
+    left: -30%;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    color: black;
+    transform: rotateY(180deg);
+}
+#back .mid{
+    position: absolute;
+    top: 35%;
+    left: -26%;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    color: black;
+    transform: rotateY(180deg);
+}
+#back .bot{
+    position: absolute;
+    top: 65%;
+    left: -25%;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    color: black;
+    transform: rotateY(180deg);
+}
+
+#straps{
+    width: 100%;
+    height: 100%;
+    /* animation: spin 1s linear infinite; */
+    /* transform-style: preserve-3d; */
+    /* z-index: -1; */
+}
+
+#lStrap{
+    position: absolute;
+    left: 28%;
+    width: 28%;
+    height: 7%;
+    background-color: red;
+    transform: rotate(68deg);
+    /* top: 20px; */
+    /* z-index: 0; */
+    /* animation: spin 1s linear infinite; */
+}
+#rStrap{
+    position: absolute;
+    left: 42%;
+    width: 28%;
+    height: 7%;
+    background-color: blue;
+    transform: rotate(-68deg);
+    /* top: 0px; */
+    /* z-index: 0; */
+}
+
+@keyframes spinner {
+    0%{
+        transform: rotate3d(0,1,0,0deg);
+        /* z-index: 1; */
+    }
+    25%{
+        transform: rotate3d(0,1,0,90deg);
+        /* z-index: 1; */
+    }
+    50%{
+        transform: rotate3d(0,1,0,180deg);
+        /* z-index: 1; */
+    }
+    75%{
+        transform: rotate3d(0,1,0,270deg);
+        /* z-index: 1; */
+    }
+    100%{
+        transform: rotate3d(0,1,0,360deg);
+        /* z-index: 1; */
+    }
+    
+}
+@keyframes spin {
+    from{
+        transform: rotate3d(0,1,0,0deg);
+        /* z-index: -1; */
+    }
+    to{
+        transform: rotate3d(0,1,0,3600deg);
+        /* z-index: -1;     */
+    }
+    
+}

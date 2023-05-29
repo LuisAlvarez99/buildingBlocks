@@ -1,0 +1,28 @@
+#tnt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: lightgray;
+}
+
+.explosives{
+    position: relative;
+    font-size: 26px;
+    background-color: purple;
+    color: gold;
+}
+
+#open-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#open-box span{
+    font-size: 40px;
+    height: 100px;
+    width: 150px;
+}

@@ -4,11 +4,23 @@
     {% block head %}
     {{ super() }}
     <title>Building...</title>
-    <link rel="stylesheet" href="{{url_for('static',filename='styles/bStyles.css')}}" "styles.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/tntStyles.css')}}">
     {% endblock %}
 </head>
-<body>
+
     {% block content %}
-        <h1>TnT in <b>Progress</b></h1>
+        <div id="tnt">
+            {% for char in explosives %}
+                <p class="explosives">
+                    {{char}}
+                </p>
+            {% endfor %}
+            <div id="open-box">
+                <span>S</span>
+                <span>A</span>
+                <span>n</span>
+                <span>D</span>
+            </div>
+        </div>
+        <script src="{{url_for('static',filename='scripts/tntScript.js')}}"></script>
     {% endblock %}
-</body>
